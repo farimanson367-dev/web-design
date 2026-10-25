@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rwanda Eats | Join Us</title>
+    <link rel="stylesheet" href="Home.css">
+    <style>
+        .hidden { display: none; 
+		}
+        .toggle-link {
+		color: #27ae60; 
+		cursor: pointer; 
+		font-weight: bold; 
+		text-decoration: 
+		underline; 
+		}
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <img src="logo.jfif" alt="Logo" class="logo">
+            <h1>RWANDA EATS</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="service.html">Menu</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="blog.html">Recipes</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="register.html">Join</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <aside class="left-sidebar">
+            <h3>Member Perks</h3>
+            <p>Get exclusive access to traditional Rwandan recipes and cooking tips!</p>
+        </aside>
+
+        <main class="main-content">
+            <div id="register-box" class="form-box">
+                <h2>Member Registration</h2>
+                <form>
+                    <label>Username:</label><br>
+                    <input type="text" class="input-field" placeholder="Choose a name" required><br>
+                    <label>Email:</label><br>
+                    <input type="email" class="input-field" placeholder="yourname@gmail.com" required><br>
+                    <label>Password:</label><br>
+                    <input type="password" class="input-field" placeholder="Create password" required><br>
+                    <button type="submit" class="submit-btn">Register Now</button>
+                </form>
+                <p style="margin-top:15px;">Already have an account? <span class="toggle-link" onclick="showLogin()">Login here</span></p>
+            </div>
+
+            <div id="login-box" class="form-box hidden">
+                <h2>Member Login</h2>
+                <form>
+                    <label>Username or Email:</label><br>
+                    <input type="text" class="input-field" placeholder="Enter username" required><br>
+                    <label>Password:</label><br>
+                    <input type="password" class="input-field" placeholder="Enter password" required><br>
+                    <button type="submit" class="submit-btn">Sign In</button>
+                </form>
+                <p style="margin-top:15px;">Need an account? <span class="toggle-link" onclick="showRegister()">Register here</span></p>
+            </div>
+        </main>
+
+        <aside class="right-sidebar">
+            <h3>Privacy</h3>
+            <p>Your data is safe with us. We follow INES-Ruhengeri safety standards.</p>
+        </aside>
+    </div>
+
+    <script>
+        function showLogin() {
+            document.getElementById('register-box').classList.add('hidden');
+            document.getElementById('login-box').classList.remove('hidden');
+        }
+        function showRegister() {
+            document.getElementById('login-box').classList.add('hidden');
+            document.getElementById('register-box').classList.remove('hidden');
+        }
+    </script>
+
+    <a href="https://wa.me/211925033324" class="whatsapp-float" target="_blank">Chat on WhatsApp</a>
+
+    <footer>
+        <p>&copy; 2026 Francis John | Computer Science Student | INES-Ruhengeri</p>
+    </footer>
+
+</body>
+</html>
